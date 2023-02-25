@@ -2,16 +2,16 @@
 
 int search(int numbers[], int low, int high, int value) 
 {
-	if (high >= l) 
+	if (high >= low) 
 	{
-        int mid = low + (high - l) / 2;
+        int mid = low + (high - low) / 2;
  
         if (numbers[mid] == value)
             return mid;
   
         // If element is smaller than mid, then
         // it can only be present in left subarray
-        if (numbers[mid] > x)
+        if (numbers[mid] > value)
             return search(numbers, low, mid - 1, value);
         
 	return search(numbers, mid + 1, high, value);
